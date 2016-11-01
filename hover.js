@@ -1,6 +1,6 @@
 $(document).ready(function(){    
-    $(".card-holder .rectangle1").click(function() {
-       $('.rectangle1').css("background", "black")
+    $(".card-holder .rectangle3").click(function() {
+       $('.rectangle3').css("background", "black")
     });
 
     $(function() {

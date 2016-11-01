@@ -1,4 +1,9 @@
-.holding-div{
+/**
+
+    Below is the CSS for the start up page with the opening of cards
+
+**/
+.holding-div, .about-holding{
  height: 100vh;
 }
 
@@ -61,7 +66,7 @@
     transform-origin: bottom center;
 }
 
-.card-hover:hover .rectangle3{
+.card-hover:hover > .rectangle3{
       background: black;
     }
 
@@ -88,6 +93,65 @@
    transform: rotate(-50deg);/*spin*/
 }
 
+.card-holder:hover > .rectangle1{
+      background: black;
+      margin:0px 0px 20px 0px;
+    }
+
+/**
+    
+    Below is the CSS for the about sections,
+    elements focus on two specific divs/cards that hold the 
+    image card and the details card.
+
+**/
+
+.about-div {
+    display: block;
+    width: 750px; 
+    height: 1050px;
+    position:absolute;
+    border-radius: 30px;
+    background: blue;
+    margin: 75px;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+/**
+
+    This CSS is to size down elements for screens with the width smaller than 1600. 
+    Most of the ratios and styles are the same as above
+
+**/
 @media only screen and (max-width: 1600px) {
     .holding-div{
      height: 100vh;
