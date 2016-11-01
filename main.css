@@ -93,7 +93,7 @@
    transform: rotate(-50deg);/*spin*/
 }
 
-.card-holder:hover > .rectangle1{
+.card-holder:hover > .rectangle2{
       background: black;
       margin:0px 0px 20px 0px;
     }
@@ -104,14 +104,16 @@
     elements focus on two specific divs/cards that hold the 
     image card and the details card.
 
-**/.about-img {
+**/
+
+.about-img, .about-desc {
     display: block;
-    width: 750px; 
-    height: 1050px;
+    width: 800px; 
+    height: 1200px;
     position:absolute;
     border-radius: 30px;
     background: blue;
-    margin: 75px;
+    margin: 35px 50px;
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
 }
@@ -151,14 +153,8 @@
 
 **/
 .about-desc{
-    display: block;
-    width: 750px; 
-    height: 1050px;
-    position:absolute;
-    border-radius: 30px;
-    background: blue;
-    margin-top: 75px;
-    left: 35%;
+    margin: 35px 0px 0px 0px;
+    left: 35.5%;
     transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
 }
@@ -191,6 +187,53 @@
     100% { -webkit-transform: translateY(-100%); }
 }
 
+/**
+
+    This below will contain the CSS navigation bar for the about me page 
+
+**/
+
+.nav-bar{
+    width: 750px; 
+    height: 1200px;
+    position: absolute;
+    left:67.5%;
+}
+.navbar-1, .navbar-2, .navbar-3, .navbar-4{
+    display: block;
+    width: 350px; 
+    height: 575px;
+    border-radius: 30px;
+    background: blue;
+    margin: 35px;
+    position:relative;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+.navbar-2{
+    background: black;
+    margin-top: -400px;
+    z-index: 2;
+}
+
+.navbar-3{
+    background: green;
+    margin-top: -400px;
+    z-index: 3;
+}
+
+.navbar-4{
+    background: pink;
+    margin-top: -400px;
+    z-index: 4;
+}
+
+.navbar-1:hover, .navbar-2:hover, .navbar-3:hover, .navbar-4:hover {
+    -webkit-transform: rotate(30deg); /* Safari */
+   transform: rotate(30deg);/*spin*/
+}
 
 /**
 
