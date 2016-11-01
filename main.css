@@ -104,9 +104,7 @@
     elements focus on two specific divs/cards that hold the 
     image card and the details card.
 
-**/
-
-.about-div {
+**/.about-img {
     display: block;
     width: 750px; 
     height: 1050px;
@@ -145,6 +143,54 @@
     0% { -webkit-transform: translateX(0%); }
     100% { -webkit-transform: translateX(-100%); }
 }
+
+
+/**
+
+    Below is CSS for the about-desc div slide in and out animation
+
+**/
+.about-desc{
+    display: block;
+    width: 750px; 
+    height: 1050px;
+    position:absolute;
+    border-radius: 30px;
+    background: blue;
+    margin-top: 75px;
+    left: 35%;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.slide-desc-in {
+    animation: slide-desc-in 0.5s forwards;
+    -webkit-animation: slide-desc-in 0.5s forwards;
+}
+
+.slide-desc-out {
+    animation: slide-desc-out 0.5s forwards;
+    -webkit-animation: slide-desc-out 0.5s forwards;
+}
+    
+@keyframes slide-desc-in {
+    100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-desc-out {
+    100% { -webkit-transform: translateX(-100%); }
+}
+    
+@keyframes slide-desc-out {
+    0% { transform: translateY(40%); }
+    100% { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes slide-desc-out {
+    0% { -webkit-transform: translateY(40%); }
+    100% { -webkit-transform: translateY(-100%); }
+}
+
 
 /**
 

@@ -9,8 +9,12 @@ $(document).ready(function(){
     });
     
     //after card is pick, about cards will slide in
-    $(".about-div").click(function() {
-       $(".about-div").toggleClass("slide-out slide-in");
+    $(".about-img").click(function() {
+       $(".about-img").toggleClass("slide-out slide-in");
+    });
+    
+    $(".about-desc").click(function() {
+       $(".about-desc").toggleClass("slide-desc-out slide-desc-in");
     });
 
 });
