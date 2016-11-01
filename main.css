@@ -201,8 +201,8 @@
 }
 .navbar-1, .navbar-2, .navbar-3, .navbar-4{
     display: block;
-    width: 350px; 
-    height: 575px;
+    width: 450px; 
+    height: 700px;
     border-radius: 30px;
     background: blue;
     margin: 35px;
@@ -214,19 +214,19 @@
 
 .navbar-2{
     background: black;
-    margin-top: -400px;
+    margin-top: -650px;
     z-index: 2;
 }
 
 .navbar-3{
     background: green;
-    margin-top: -400px;
+    margin-top: -650px;
     z-index: 3;
 }
 
 .navbar-4{
     background: pink;
-    margin-top: -400px;
+    margin-top: -650px;
     z-index: 4;
 }
 
