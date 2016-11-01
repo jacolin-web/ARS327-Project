@@ -1,0 +1,154 @@
+.holding-div{
+ height: 100vh;
+}
+
+.card-holder{
+    display:block;
+    width: 550px;
+    height: 850px;
+    margin: 75 auto;
+    position:relative;
+}
+
+.text{
+    font-family: 'Amatic SC', cursive;
+    font-size: 75px;
+    text-align: center;
+    vertical-align: center;
+    display: block;
+    position:relative; overflow:hidden;
+}
+
+.rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5{
+    display: block;
+    width: 550px; 
+    height: 850px;
+    position:absolute;
+    border-radius: 30px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+.rectangle1 {
+   background: blue;
+   z-index:-1;
+}
+
+.rectangle2 {
+   background: red;
+   z-index:-2;
+}
+
+.rectangle3 {
+   background: green;
+   z-index:-3;
+}
+
+.rectangle4 {
+   background: purple;
+   z-index:-4;
+}
+
+.rectangle5 {
+   background: pink;
+   z-index:-5;
+}
+
+.transform{
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;/*How long the transition is*/
+    transform-origin: bottom center;
+}
+
+.card-hover:hover .rectangle3{
+      background: black;
+    }
+
+.rect1-active, .rect2-active, .rect3-active, .rect4-active, .rect5-active, {
+    width: 550px; 
+    transform-origin: bottom center;
+}
+.rect1-active{
+   -webkit-transform: rotate(50deg); /* Safari */
+   transform: rotate(50deg);/*spin*/
+}
+
+.rect2-active{ 
+   -webkit-transform: rotate(30deg); /* Safari */
+   transform: rotate(30deg);/*spin*/
+}
+.rect4-active{
+   -webkit-transform: rotate(-30deg); /* Safari */
+   transform: rotate(-30deg);/*spin*/
+}
+
+.rect5-active{ 
+   -webkit-transform: rotate(-50deg); /* Safari */
+   transform: rotate(-50deg);/*spin*/
+}
+
+@media only screen and (max-width: 1600px) {
+    .holding-div{
+     height: 100vh;
+    }
+
+    body{
+      overflow-y: hidden;
+    }
+    .card-holder{
+        display:block;
+        width:250px;
+        height: 470px;
+        margin: 30px auto;
+        position: relative;
+      }
+
+    .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5{
+        display: block;
+        left:0px;
+        width: 250px; 
+        height: 450px;
+        position:absolute;
+        border-radius: 30px;
+        -webkit-transition: margin 0.5s ease-out;
+        -moz-transition: margin 0.5s ease-out;
+        -o-transition: margin 0.5s ease-out;
+    }
+
+    .rectangle1 {
+       background: blue;
+    }
+
+    .rectangle2 {
+       background: red;
+    }
+
+    .rectangle3 {
+       background: green;
+    }
+
+    .rectangle4 {
+       background: purple;
+    }
+
+    .rectangle5 {
+       background: pink;
+    }
+
+    .transform{
+        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+        transition: width 2s, height 2s, transform 2s;/*How long the transition is*/
+        transform-origin: bottom center;
+    }
+
+   .action-card{
+      background: black;
+      margin: 10px;
+    }
+
+    .card-holder:hover > .rectangle3{
+      background: black;
+      margin:0px 0px 20px 0px;
+    }
+}
