@@ -1,8 +1,26 @@
 /**
 
+    Basic stylizations
+
+**/
+body{
+    overflow:hidden;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+}
+
+
+
+/**
+
     Below is the CSS for the start up page with the opening of cards
 
 **/
+
 .holding-div, .about-holding{
  height: 100vh;
 }
@@ -21,7 +39,7 @@
     text-align: center;
     vertical-align: center;
     display: block;
-    position:relative; overflow:hidden;
+    position:relative; 
 }
 
 .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5{
@@ -108,19 +126,20 @@
 
 .about-img, .about-desc {
     display: block;
-    width: 800px; 
-    height: 1200px;
+    width: 780px; 
+    height: 1180px;
     position:absolute;
     border-radius: 30px;
-    background: blue;
-    margin: 35px 50px;
+    border-style: solid;
+    border-width: 8px;
+    margin: 35px 150px;
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
 }
 
 .slide-in {
-    animation: slide-in 0.5s forwards;
-    -webkit-animation: slide-in 0.5s forwards;
+    animation: slide-in 1.5s forwards;
+    -webkit-animation: slide-in 1.5s forwards;
 }
 
 .slide-out {
@@ -153,15 +172,17 @@
 
 **/
 .about-desc{
-    margin: 35px 0px 0px 0px;
-    left: 35.5%;
+    background: white;
+    margin: 35px 0px -10px 0px;
+    left: 40%;
+    padding: 0px 15px 0px 15px;
     transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
 }
 
 .slide-desc-in {
-    animation: slide-desc-in 0.5s forwards;
-    -webkit-animation: slide-desc-in 0.5s forwards;
+    animation: slide-desc-in 1.5s forwards;
+    -webkit-animation: slide-desc-in 1.5s forwards;
 }
 
 .slide-desc-out {
@@ -197,7 +218,7 @@
     width: 750px; 
     height: 1200px;
     position: absolute;
-    left:67.5%;
+    left:90%;
 }
 .navbar-1, .navbar-2, .navbar-3, .navbar-4{
     display: block;
@@ -210,29 +231,30 @@
     -webkit-transition: margin 0.5s ease-out;
     -moz-transition: margin 0.5s ease-out;
     -o-transition: margin 0.5s ease-out;
+    -webkit-transform: rotate(-30deg); /* Safari */
+    transform: rotate(-30deg);/*spin*/
 }
 
 .navbar-2{
     background: black;
-    margin-top: -650px;
+    margin-top: -550px;
     z-index: 2;
 }
 
 .navbar-3{
     background: green;
-    margin-top: -650px;
+    margin-top: -550px;
     z-index: 3;
 }
 
 .navbar-4{
     background: pink;
-    margin-top: -650px;
+    margin-top: -550px;
     z-index: 4;
 }
 
 .navbar-1:hover, .navbar-2:hover, .navbar-3:hover, .navbar-4:hover {
-    -webkit-transform: rotate(30deg); /* Safari */
-   transform: rotate(30deg);/*spin*/
+   margin-left: -80px;
 }
 
 /**
