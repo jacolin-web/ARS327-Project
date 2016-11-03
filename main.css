@@ -14,13 +14,14 @@ h1{
 }
 
 
-
 /**
 
     Below is the CSS for the start up page with the opening of cards
 
 **/
-
+body{
+    overflow:hidden;
+}
 .holding-div, .about-holding{
  height: 100vh;
 }
@@ -40,13 +41,14 @@ h1{
     vertical-align: center;
     display: block;
     position:relative; 
+    overflow:hidden;
 }
 
 .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5{
     display: block;
     width: 550px; 
     height: 850px;
-    position:absolute;
+    position: relative;
     border-radius: 30px;
     -webkit-transition: margin 0.5s ease-out;
     -moz-transition: margin 0.5s ease-out;
@@ -61,21 +63,25 @@ h1{
 .rectangle2 {
    background: red;
    z-index:-2;
+    margin-top:-850px;
 }
 
 .rectangle3 {
    background: green;
    z-index:-3;
+    margin-top:-850px;
 }
 
 .rectangle4 {
    background: purple;
    z-index:-4;
+    margin-top:-850px;
 }
 
 .rectangle5 {
    background: pink;
    z-index:-5;
+    margin-top:-850px;
 }
 
 .transform{
@@ -84,9 +90,12 @@ h1{
     transform-origin: bottom center;
 }
 
-.card-hover:hover > .rectangle3{
+
+.card-holder:hover .rectangle1{
+}
+.rectangle5:hover{
       background: black;
-    }
+}
 
 .rect1-active, .rect2-active, .rect3-active, .rect4-active, .rect5-active, {
     width: 550px; 
@@ -110,11 +119,6 @@ h1{
    -webkit-transform: rotate(-50deg); /* Safari */
    transform: rotate(-50deg);/*spin*/
 }
-
-.card-holder:hover > .rectangle2{
-      background: black;
-      margin:0px 0px 20px 0px;
-    }
 
 /**
     
