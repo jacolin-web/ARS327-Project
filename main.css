@@ -90,10 +90,7 @@ body{
     transform-origin: bottom center;
 }
 
-
 .card-holder:hover .rectangle1{
-}
-.rectangle5:hover{
       background: black;
 }
 
