@@ -1,5 +1,21 @@
 /**
 
+    Basic stylizations
+
+**/
+body{
+    overflow:hidden;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+}
+
+
+/**
+
     Below is the CSS for the start up page with the opening of cards
 
 **/
@@ -109,21 +125,22 @@ body{
 
 **/
 
-.about-div {
+.about-img, .about-desc {
     display: block;
-    width: 750px; 
-    height: 1050px;
+    width: 780px; 
+    height: 1180px;
     position:absolute;
     border-radius: 30px;
-    background: blue;
-    margin: 75px;
+    border-style: solid;
+    border-width: 8px;
+    margin: 35px 150px;
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
 }
 
 .slide-in {
-    animation: slide-in 0.5s forwards;
-    -webkit-animation: slide-in 0.5s forwards;
+    animation: slide-in 1.5s forwards;
+    -webkit-animation: slide-in 1.5s forwards;
 }
 
 .slide-out {
@@ -147,6 +164,98 @@ body{
 @-webkit-keyframes slide-out {
     0% { -webkit-transform: translateX(0%); }
     100% { -webkit-transform: translateX(-100%); }
+}
+
+
+/**
+
+    Below is CSS for the about-desc div slide in and out animation
+
+**/
+.about-desc{
+    background: white;
+    margin: 35px 0px -10px 0px;
+    left: 40%;
+    padding: 0px 15px 0px 15px;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.slide-desc-in {
+    animation: slide-desc-in 1.5s forwards;
+    -webkit-animation: slide-desc-in 1.5s forwards;
+}
+
+.slide-desc-out {
+    animation: slide-desc-out 0.5s forwards;
+    -webkit-animation: slide-desc-out 0.5s forwards;
+}
+    
+@keyframes slide-desc-in {
+    100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-desc-out {
+    100% { -webkit-transform: translateX(-100%); }
+}
+    
+@keyframes slide-desc-out {
+    0% { transform: translateY(40%); }
+    100% { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes slide-desc-out {
+    0% { -webkit-transform: translateY(40%); }
+    100% { -webkit-transform: translateY(-100%); }
+}
+
+/**
+
+    This below will contain the CSS navigation bar for the about me page 
+
+**/
+
+.nav-bar{
+    width: 750px; 
+    height: 1200px;
+    position: absolute;
+    left:90%;
+}
+.navbar-1, .navbar-2, .navbar-3, .navbar-4{
+    display: block;
+    width: 450px; 
+    height: 700px;
+    border-radius: 30px;
+    background: blue;
+    margin: 35px;
+    position:relative;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+    -webkit-transform: rotate(-30deg); /* Safari */
+    transform: rotate(-30deg);/*spin*/
+}
+
+.navbar-2{
+    background: black;
+    margin-top: -550px;
+    z-index: 2;
+}
+
+.navbar-3{
+    background: green;
+    margin-top: -550px;
+    z-index: 3;
+}
+
+.navbar-4{
+    background: pink;
+    margin-top: -550px;
+    z-index: 4;
+}
+
+.navbar-1:hover, .navbar-2:hover, .navbar-3:hover, .navbar-4:hover {
+   margin-left: -80px;
 }
 
 /**

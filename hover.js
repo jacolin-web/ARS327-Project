@@ -1,46 +1,9 @@
-$(document).ready(function(){    
-    $(".card-holder .rectangle3").click(function() {
-       $('.rectangle3').css("background", "black")
-    });
-
+$(document).ready(function(){  
     $(function() {
-    $(".holding-div .card-holder .rectangle1").mouseenter(function() {
-        $(this).css("background", "black")
+    $(".navbar-1").mouseenter(function() {
+        $('.navbar-1').toggleClass("nav-hover");
     }).mouseleave(function() {
-        $(this).css("background", "blue")
-    	});
-	});
-
-	$(function() {
-    $(".rectangle2").mouseenter(function() {
-        $(this).addClass("action-card");
-    }).mouseleave(function() {
-        $(this).removeClass('action-card')
-    	});
-	});
-
-	$(function() {
-    $(".rectangle3").mouseenter(function() {
-        $(this).addClass("action-card");
-    }).mouseleave(function() {
-        $(this).removeClass('action-card')
-    	});
-	});
-
-	$(function() {
-    $(".rectangle4").mouseenter(function() {
-        $(this).addClass("action-card");
-        $(this).removeClass('action-card')
-    }).mouseleave(function() {
-        $(this).removeClass('action-card')
-    	});
-	});
-
-	$(function() {
-    $(".rectangle5").mouseenter(function() {
-        $(this).addClass("action-card");
-    }).mouseleave(function() {
-        $(this).removeClass('action-card')
+        $('.navbar-1').toggleClass("nav-hover");
     	});
 	});
 });
