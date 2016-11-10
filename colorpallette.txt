@@ -1,0 +1,8 @@
+#FF76AB
+#DA3BE8
+#9122FF
+#574AE8
+#588EFF
+
+border color
+#9d75c5

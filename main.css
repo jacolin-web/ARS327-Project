@@ -4,6 +4,7 @@
 
 **/
 body{
+    background: url("img/white-marble-2048.jpg") center fixed;
     overflow:hidden;
     overflow-x: hidden;
 }
@@ -22,6 +23,7 @@ h1{
 body{
     overflow:hidden;
 }
+
 .holding-div, .about-holding{
  height: 100vh;
 }
@@ -44,11 +46,18 @@ body{
     overflow:hidden;
 }
 
+.txt-open{
+    margin-top: 80px;
+}
 .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5{
     display: block;
     width: 550px; 
     height: 850px;
-    position: relative;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black;
+    position: absolute;
     border-radius: 30px;
     -webkit-transition: margin 0.5s ease-out;
     -moz-transition: margin 0.5s ease-out;
@@ -56,32 +65,28 @@ body{
 }
 
 .rectangle1 {
-   background: blue;
+   background: white url("img/hello-sm.png") center no-repeat;
    z-index:-1;
 }
 
 .rectangle2 {
-   background: red;
+   background: white url("img/hello-sm.png") center no-repeat;
    z-index:-2;
-    margin-top:-850px;
 }
 
 .rectangle3 {
-   background: green;
+   background: white url("img/hello-sm.png") center no-repeat;
    z-index:-3;
-    margin-top:-850px;
 }
 
 .rectangle4 {
-   background: purple;
+   background: white url("img/hello-sm.png") center no-repeat;
    z-index:-4;
-    margin-top:-850px;
 }
 
 .rectangle5 {
-   background: pink;
+   background: white url("img/hello-sm.png") center no-repeat;
    z-index:-5;
-    margin-top:-850px;
 }
 
 .transform{
@@ -124,7 +129,9 @@ body{
     image card and the details card.
 
 **/
-
+.about-img{
+    background: url("img/hello.png") center;
+}
 .about-img, .about-desc {
     display: block;
     width: 780px; 
@@ -225,8 +232,10 @@ body{
     display: block;
     width: 450px; 
     height: 700px;
-    border-radius: 30px;
-    background: blue;
+     border-radius: 30px;
+    border-style: solid;
+    border-width: 8px;
+    background: white url("img/hello-sm.png") center;
     margin: 35px;
     position:relative;
     -webkit-transition: margin 0.5s ease-out;
@@ -237,19 +246,19 @@ body{
 }
 
 .navbar-2{
-    background: black;
+    background: white url("img/hello-sm.png") center;
     margin-top: -550px;
     z-index: 2;
 }
 
 .navbar-3{
-    background: green;
+    background: white url("img/hello-sm.png") center;
     margin-top: -550px;
     z-index: 3;
 }
 
 .navbar-4{
-    background: pink;
+    background: white url("img/hello-sm.png") center;
     margin-top: -550px;
     z-index: 4;
 }

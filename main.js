@@ -6,6 +6,7 @@ $(document).ready(function(){
         $('.rectangle3').addClass('rect3-active');
         $('.rectangle4').addClass('rect4-active');
         $('.rectangle5').addClass('rect5-active');
+        $('.text').addClass('txt-open');
     });
     
     //after card is pick, about cards will slide in
