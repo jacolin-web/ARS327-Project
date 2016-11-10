@@ -283,7 +283,7 @@ body{
     Most of the ratios and styles are the same as above
 
 **/
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1280px) {
     .holding-div{
      height: 100vh;
     }
@@ -291,59 +291,68 @@ body{
     body{
       overflow-y: hidden;
     }
+    
     .card-holder{
         display:block;
         width:250px;
-        height: 470px;
-        margin: 30px auto;
+        height: 300px;
+        margin: 20px auto;
         position: relative;
       }
+    
+    .text{
+        top: 100px;
+        font-size: 50px;
+    }
+
+    .txt-open{
+        top: 175px;
+         transform: translateY(-10%);
+        -webkit-transform: translateY(-10%);
+        animation: slide-text 2.5s forwards;
+        -webkit-animation: slide-text 2.5s forwards;
+    }
 
     .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5{
         display: block;
         left:0px;
         width: 250px; 
-        height: 450px;
+        height: 400px;
         position:absolute;
-        border-radius: 30px;
+        border-radius: 10px;
         -webkit-transition: margin 0.5s ease-out;
         -moz-transition: margin 0.5s ease-out;
         -o-transition: margin 0.5s ease-out;
     }
 
     .rectangle1 {
-       background: blue;
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-1;
     }
 
     .rectangle2 {
-       background: red;
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-2;
     }
 
     .rectangle3 {
-       background: green;
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-3;
     }
 
     .rectangle4 {
-       background: purple;
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-4;
     }
 
     .rectangle5 {
-       background: pink;
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-5;
     }
 
     .transform{
         -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
         transition: width 2s, height 2s, transform 2s;/*How long the transition is*/
         transform-origin: bottom center;
-    }
-
-   .action-card{
-      background: black;
-      margin: 10px;
-    }
-
-    .card-holder:hover > .rectangle3{
-      background: black;
-      margin:0px 0px 20px 0px;
     }
 }
