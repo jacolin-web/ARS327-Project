@@ -279,7 +279,191 @@ body{
 
 /**
 
-    This CSS is to size down elements for screens with the width smaller than 1600. 
+    This CSS is to size down elements for screens with the width smaller than 1280. 
+    Most of the ratios and styles are the same as above
+
+**/
+@media only screen and (max-width: 1920px) {
+    .holding-div{
+     height: 100vh;
+    }
+
+    body{
+      overflow-y: hidden;
+    }
+    
+    .card-holder{
+        display:block;
+        width:350px;
+        height: 550px;
+        margin: 65px auto;
+        position: relative;
+      }
+    
+    .text{
+        font-size: 50px;
+    }
+
+    .txt-open{
+        top: 80px;
+         transform: translateY(-10%);
+        -webkit-transform: translateY(-10%);
+        animation: slide-text 2.5s forwards;
+        -webkit-animation: slide-text 2.5s forwards;
+    }
+
+    .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5{
+        display: block;
+        left:0px;
+        width: 350px; 
+        height: 550px;
+        position:absolute;
+        border-radius: 30x;
+        border-width: 5px;
+        -webkit-transition: margin 0.5s ease-out;
+        -moz-transition: margin 0.5s ease-out;
+        -o-transition: margin 0.5s ease-out;
+    }
+
+    .rectangle1 {
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-1;
+    }
+
+    .rectangle2 {
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-2;
+    }
+
+    .rectangle3 {
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-3;
+    }
+
+    .rectangle4 {
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-4;
+    }
+
+    .rectangle5 {
+       background: white url("img/hello-xsm.png") center no-repeat;
+       z-index:-5;
+    }
+
+    .transform{
+        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+        transition: width 2s, height 2s, transform 2s;/*How long the transition is*/
+        transform-origin: bottom center;
+    }
+    
+    /**
+
+    This below will contain the CSS navigation bar for the about me page 
+
+    **/
+
+    .nav-bar{
+        width: 750px; 
+        height: 1200px;
+        position: absolute;
+        left:95%;
+    }
+    .navbar-1, .navbar-2, .navbar-3, .navbar-4{
+        display: block;
+        width: 350px; 
+        height: 550px;
+        border-radius: 30px;
+        border-style: solid;
+        border-width: 5px;
+        background: #F5F8F2 url("img/hello-sm.png") center;
+        margin: 35px;
+        position:relative;
+        -webkit-transition: margin 0.5s ease-out;
+        -moz-transition: margin 0.5s ease-out;
+        -o-transition: margin 0.5s ease-out;
+        -webkit-transform: rotate(-30deg); /* Safari */
+        transform: rotate(-30deg);/*spin*/
+    }
+
+    .navbar-2{
+        background: #F5F8F2 url("img/hello-sm.png") center;
+        margin-top: -500px;
+        z-index: 2;
+    }
+
+    .navbar-3{
+        background: #F5F8F2 url("img/hello-sm.png") center;
+        margin-top: -500px;
+        z-index: 3;
+    }
+
+    .navbar-4{
+        background: #F5F8F2 url("img/hello-sm.png") center;
+        margin-top: -500px;
+        z-index: 4;
+    }
+
+    .navbar-1:hover, .navbar-2:hover, .navbar-3:hover, .navbar-4:hover {
+       margin-left: -50px;
+    }
+    
+    .about-img, .about-desc {
+        display: block;
+        width: 550px; 
+        height: 800px;
+        position:absolute;
+        border-radius: 30px;
+        border-style: solid;
+        border-width: 6px;
+        margin: 35px 100px;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+    
+    .about-desc{
+        background: white;
+        margin: 35px 0px -10px 0px;
+        left: 40%;
+        padding: 0px 15px 0px 15px;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+    }
+
+    .slide-desc-in {
+        animation: slide-desc-in 1.5s forwards;
+        -webkit-animation: slide-desc-in 1.5s forwards;
+    }
+
+    .slide-desc-out {
+        animation: slide-desc-out 0.5s forwards;
+        -webkit-animation: slide-desc-out 0.5s forwards;
+    }
+
+    @keyframes slide-desc-in {
+        100% { transform: translateY(0%); }
+    }
+
+    @-webkit-keyframes slide-desc-out {
+        100% { -webkit-transform: translateX(-100%); }
+    }
+
+    @keyframes slide-desc-out {
+        0% { transform: translateY(40%); }
+        100% { transform: translateY(-100%); }
+    }
+
+    @-webkit-keyframes slide-desc-out {
+        0% { -webkit-transform: translateY(40%); }
+        100% { -webkit-transform: translateY(-100%); }
+    }
+}
+
+
+
+
+/**
+
+    This CSS is to size down elements for screens with the width smaller than 1280. 
     Most of the ratios and styles are the same as above
 
 **/

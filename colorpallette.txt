@@ -6,3 +6,6 @@
 
 border color
 #9d75c5
+
+off white
+#F5F8F2
