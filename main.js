@@ -9,13 +9,7 @@ $(document).ready(function(){
         $('.text').addClass('txt-open');
     });
     
-    //after card is pick, about cards will slide in
-    $(".about-img").click(function() {
-       $(".about-img").toggleClass("slide-out slide-in");
-    });
-    
-    $(".about-desc").click(function() {
-       $(".about-desc").toggleClass("slide-desc-out slide-desc-in");
-    });
+       $(".about-img").addClass("slide-in");
+       $(".about-desc").addClass("slide-desc-in");
 
 });
