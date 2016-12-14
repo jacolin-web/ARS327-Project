@@ -24,16 +24,24 @@ body{
     overflow:hidden;
 }
 
-.holding-div, .about-holding{
+.holding-div{
+ height: 100vh;
+}
+
+.about-holding{
  height: 100vh;
 }
 
 .card-holder{
     display:block;
-    width: 550px;
     height: 850px;
     margin: 75 auto;
     position:relative;
+}
+
+.cards{
+    position: absolute;
+    height:100vh;
 }
 
 .text{
