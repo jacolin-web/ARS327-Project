@@ -26,6 +26,8 @@ body{
 
 .holding-div{
  height: 100vh;
+ width:0px;
+ position:absolute;
 }
 
 .about-holding{
@@ -36,6 +38,7 @@ body{
     display:block;
     height: 850px;
     margin: 75 auto;
+    margin-left: 975px;
     position:relative;
 }
 
@@ -50,8 +53,10 @@ body{
     text-align: center;
     vertical-align: center;
     display: block;
-    position:relative; 
+    position: absolute;
     overflow:hidden;
+    margin-top: 975px;
+    margin-left: 1050px;
 }
 
 .txt-open{
@@ -62,9 +67,22 @@ body{
     -webkit-animation: slide-text 2.5s forwards;
 }
 
+.txt-close{
+    top: 120px;
+     transform: translateY(30%);
+    -webkit-transform: translateY(30%);
+    animation: slide-text-out 2.5s backwards;
+    -webkit-animation: slide-text-out 2.5s backwards;
+}
+
 @-webkit-keyframes slide-text {
-    0% { -webkit-transform: translateY(0%); }
+    0% { -webkit-transform: translateY(10%); }
     100% { -webkit-transform: translateY(40%); }
+}
+
+@-webkit-keyframes slide-text-out {
+    0% { -webkit-transform: translateY(40%); }
+    100% { -webkit-transform: translateY(10%); }
 }
 
 .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5{
@@ -113,9 +131,12 @@ body{
     transform-origin: bottom center;
 }
 
+/** this is so you can hover over a specific card but it doesn't actually work lol
+
 .card-holder:hover .rectangle1{
       background: black;
 }
+**/
 
 .rect1-active, .rect2-active, .rect3-active, .rect4-active, .rect5-active, {
     width: 550px; 
