@@ -9,11 +9,21 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    border-color: black;
+}
 h1{
     font-family: 'Amatic SC', cursive;
     font-size: 70px;
 }
 
+h2{
+    font-family: 'Nunito', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
 
 /**
 
@@ -171,7 +181,20 @@ body{
 .about-img{
     background: url("img/hello.png") center;
 }
-.about-img, .about-desc {
+
+.port-one-img{
+    background: url("img/SelfPortraitProject.png") fixed center no-repeat;
+}
+
+.port-two-img{
+    background: url("img/SummerSelfPortrait2.png") fixed center no-repeat;
+}
+
+.port-three-img{
+    background: url("img/statue.png") fixed center no-repeat;
+}
+
+.about-img, .about-desc, .port-one-img, .port-one-desc, .port-two-img, .port-two-desc, .port-three-img, .port-three-desc{
     display: block;
     width: 780px; 
     height: 1180px;
@@ -180,8 +203,8 @@ body{
     border-style: solid;
     border-width: 8px;
     margin: 35px 150px;
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
+    transform: translateX(-170%);
+    -webkit-transform: translateX(-130%);
 }
 
 .slide-in {
@@ -209,7 +232,7 @@ body{
 
 @-webkit-keyframes slide-out {
     0% { -webkit-transform: translateX(0%); }
-    100% { -webkit-transform: translateX(-100%); }
+    100% { -webkit-transform: translateX(-130%); }
 }
 
 
@@ -218,13 +241,13 @@ body{
     Below is CSS for the about-desc div slide in and out animation
 
 **/
-.about-desc{
+.about-desc, .port-one-desc, .port-two-desc, .port-three-desc{
     background: white;
     margin: 35px 0px -10px 0px;
     left: 40%;
     padding: 0px 15px 0px 15px;
     transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
+    -webkit-transform: translateY(-150%);
 }
 
 .slide-desc-in {
@@ -246,13 +269,13 @@ body{
 }
     
 @keyframes slide-desc-out {
-    0% { transform: translateY(40%); }
+    0% { transform: translateY(0%); }
     100% { transform: translateY(-100%); }
 }
 
 @-webkit-keyframes slide-desc-out {
-    0% { -webkit-transform: translateY(40%); }
-    100% { -webkit-transform: translateY(-100%); }
+    0% { -webkit-transform: translateY(0%); }
+    100% { -webkit-transform: translateY(-150%); }
 }
 
 /**
