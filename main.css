@@ -205,6 +205,7 @@ body{
     margin: 35px 150px;
     transform: translateX(-170%);
     -webkit-transform: translateX(-130%);
+    overflow: hidden;
 }
 
 .slide-in {
