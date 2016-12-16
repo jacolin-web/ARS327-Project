@@ -11,5 +11,20 @@ $(document).ready(function(){
     
        $(".about-img").addClass("slide-in");
        $(".about-desc").addClass("slide-desc-in");
-
+        $(".port-one-img").addClass("slide-in");
+       $(".port-one-desc").addClass("slide-desc-in");
+    
+    $(".port-one-desc").click(function() {
+       $(".port-two-img").addClass("slide-in");
+       $(".port-two-desc").addClass("slide-desc-in");
+       $(".port-one-img").toggleClass("slide-in slide-out");
+       $(".port-one-desc").toggleClass("slide-desc-in slide-desc-out");
+    });
+    
+    $(".port-two-desc").click(function() {
+       $(".port-three-img").addClass("slide-in");
+       $(".port-three-desc").addClass("slide-desc-in");
+       $(".port-two-img").toggleClass("slide-in slide-out");
+       $(".port-two-desc").toggleClass("slide-desc-in slide-desc-out");
+    });
 });
